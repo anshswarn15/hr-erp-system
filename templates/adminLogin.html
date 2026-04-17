@@ -1,0 +1,84 @@
+{% include 'header.html' %}
+
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="#">Admin Login</a></h2>
+
+							<form action="/admindashboard" method="post">
+                            <hr>
+
+                            USERNAME:<input type="text" name="usernametxt">
+                            <br>
+                            <br>
+                            PASSWORD:<input type="text" name="passwordtxt">
+                            <br>
+                            <br>
+                            <hr>
+                            <input type="submit" value="Login" class="btn btn-primary">
+							</form>
+							<hr>
+							<font color = 'red'>{{status}}</font>
+							
+							
+							
+						</div>
+						
+						
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<li>
+								<h2>NOTICE</h2>
+								<p>All users are requested to keep their login credentials secure.
+									Unauthorized access or misuse of the system will lead to strict action.
+									
+									System updates and maintenance schedules will be notified here regularly.</p>
+							</li>
+							<li>
+								<h2>Categories</h2>
+								<ul>
+									<li><a href="#">Employee Management</a></li>
+									<li><a href="#">Attendance System</a></li>
+									<li><a href="#">Payroll System</a></li>
+									<li><a href="#">Leave Management</a></li>
+									<li><a href="#">Reports</a></li>
+									<li><a href="#">Analytics</a></li>
+								</ul>
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<h2>Archives</h2>
+								<ul>
+									<li><a href="#">January 2026 Updates</a></li>
+									<li><a href="#">February 2026 Updates</a></li>
+									<li><a href="#">March 2026 Updates</a></li>
+									<li><a href="#">System Improvements</a></li>
+									<li><a href="#">Feature Releases</a></li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>© 2026 HR ERP System | Developed by Anshuk Swarnkar
+		All rights reserved.</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

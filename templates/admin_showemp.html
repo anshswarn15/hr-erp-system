@@ -1,0 +1,110 @@
+<style>
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width:100% ;
+	
+  }
+  
+  td, th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2;}
+  
+  tr:hover {background-color: #ddd;}
+  
+  th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+  }
+  
+
+  </style>
+
+{% include 'admin_header.html' %}
+
+<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="#">Show Employee</a></h2>
+							<table>
+								<tr>
+								  <th>Emp ID</th>
+								  <th>Emp Name</th>
+								  <th>Designation</th>
+								  <th> </th>
+								</tr>
+
+								{% for empid,empname,des in recordlist %}
+
+								<tr>
+								  <td>{{empid}}</td>
+								  <td>{{empname}}</td>
+								  <td>{{des}}</td>
+								  <td><a href="/admin_emp_profile?eid={{empid}}" class="btn btn-primary">View</a></td>
+								</tr>
+
+							    {% endfor %}
+								
+							  </table>
+						</div>
+						
+						
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<li>
+								<h2>PROFILE</h2>
+								<div id="img"><img src="/static/images/Admin-Profile.png" width="100px"></div>
+							</li>
+							<li>
+								<h2>Categories</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<h2>Archives</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2026 https://www.youtube.com/@AnshDocumentary15. All rights reserved. Design by Anshuk Swarnkar</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

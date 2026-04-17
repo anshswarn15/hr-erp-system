@@ -1,0 +1,84 @@
+{% include 'admin_header.html' %}
+
+<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="#">Edit Employee Profile</a></h2>
+
+							<form action="/admin_emp_update" method="post">
+                            
+							Employee ID:<input type="text" value = {{emplist[0][0]}} name="txtEmpID" class="form-control">
+							Name:<input type="text" name="txtName" value = {{emplist[0][1]}} class="form-control">
+							Email ID:<input type="text" name="txtEmailID" value = {{emplist[0][2]}} class="form-control">
+							Mobile Number:<input type="text" name="txtMobile" value = {{emplist[0][3]}} class="form-control">
+							Designation:<input type="text" name="txtDes" value = {{emplist[0][4]}} class="form-control">
+							Salary:<input type="text" name="txtSalary" value = {{emplist[0][5]}} class="form-control">
+                            <hr>
+							<input type="submit" value="Update" class="btn btn-success">
+                           
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							
+							<a href="/admin_emp_delete?id={{emplist[0][0]}}" class="btn btn-danger">Delete</a>
+
+						</form>
+
+
+						</div>
+						
+						
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<li>
+								<h2>PROFILE</h2>
+								<div id="img"><img src="/static/images/Admin-Profile.png" width="100px"></div>
+							</li>
+							<li>
+								<h2>Categories</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<h2>Archives</h2>
+								<ul>
+									<li><a href="#">Aliquam libero</a></li>
+									<li><a href="#">Consectetuer adipiscing elit</a></li>
+									<li><a href="#">Metus aliquam pellentesque</a></li>
+									<li><a href="#">Suspendisse iaculis mauris</a></li>
+									<li><a href="#">Urnanet non molestie semper</a></li>
+									<li><a href="#">Proin gravida orci porttitor</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2026 https://www.youtube.com/@AnshDocumentary15. All rights reserved. Design by Anshuk Swarnkar</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
