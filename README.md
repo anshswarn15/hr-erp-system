@@ -61,7 +61,7 @@ source .venv/bin/activate
 2) Install dependencies:
 
 ```bash
-pip install flask pymysql
+pip install -r requirements.txt
 ```
 
 3) Start the app:
